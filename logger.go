@@ -7,7 +7,12 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+	"fmt"
 )
+
+func init() {
+	fmt.Println("INIT!!!")
+}
 
 // LogFunction For big messages, it can be more efficient to pass a function
 // and only call it if the log level is actually enables rather than
